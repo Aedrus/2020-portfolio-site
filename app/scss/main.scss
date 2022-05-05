@@ -1,0 +1,7 @@
+// -- Main SCSS file to collect all partials and compile into CSS.
+// =================================================================================================
+// ## Load order matters. Some partials must be imported first before they can be accessed.
+// =================================================================================================
+// Import Syntax | @import 'folder/file';
+// =================================================================================================
+@import 'base/base';
