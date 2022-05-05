@@ -1,14 +1,81 @@
 // -------------------------
 // Global Styles & Resets
 // --------------------------
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  background: $bg-primary;
+}
 
 // =========
 // Id Styles
 // =========
+// Header Section---------
 
+#header-wrapper {
+  background-color: $bg-primary-accent;
+  img {
+    width: 50px;
+  }
+}
+
+#top-nav li {
+  color: $type-white;
+  text-decoration: none;
+  list-style: none;
+  padding: 20px;
+}
+#top-nav ul {
+  margin: 5px 30px 5px 5px;
+}
+
+// Hero Section--------------
+
+#hero-wrapper {
+  background: $bg-secondary;
+  width: 100%;
+  height: 768px;
+  position: relative;
+}
+
+#hero-info {
+  position: relative;
+  top: 252px;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  background: $bg-primary-accent;
+  color: $type-white;
+  width: 100%;
+  min-height: 120px;
+}
+
+// Work Section---------------
+
+#work-wrapper {
+  background: $bg-primary;
+  width: 100%;
+  height: 768px;
+  color: $type-white;
+}
+
+#work-heading {
+  margin: 30px 30px;
+  max-width: 100%;
+}
+#work-gallery {
+  margin: 30px 30px;
+  max-width: 100%;
+}
 
 // ============
 // Class Styles
 // ============
-
+.header-logo {
+  margin-left: 30px;
+  font-size: small;
+}

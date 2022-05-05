@@ -1,4 +1,18 @@
 // -------------------------
 // Grid Styles
 // --------------------------
+.grid {
+  display: grid;
 
+  &-box-1 {
+    grid-template-columns: 350px 2fr;
+    grid-template-rows: 350px 2fr;
+    // Working on grid HERE
+  }
+  &-gtc-2 {
+    grid-template-columns: 2fr 2fr;
+  }
+  &-gtc-3 {
+    grid-template-columns: 3fr 3fr;
+  }
+}
