@@ -9,12 +9,20 @@ html {
   background: #121416;
 }
 
-#header-wrapper {
-  background-color: #22252a;
+footer {
+  background: #22252a;
+  min-height: 120px;
+  color: #f2f2f2;
 }
 
-#header-wrapper img {
-  width: 50px;
+a {
+  text-decoration: none;
+}
+
+#header-wrapper {
+  background-color: #22252a;
+  min-height: 80px;
+  padding: 0px 30px;
 }
 
 #top-nav li {
@@ -24,23 +32,13 @@ html {
   padding: 20px;
 }
 
-#top-nav ul {
-  margin: 5px 30px 5px 5px;
-}
-
 #hero-wrapper {
   background: #ebebeb;
-  width: 100%;
-  height: 768px;
-  position: relative;
+  min-height: 768px;
+  padding: 0px 30px;
 }
 
 #hero-info {
-  position: relative;
-  top: 252px;
-  bottom: 0px;
-  right: 0;
-  left: 0;
   background: #22252a;
   color: #f2f2f2;
   width: 100%;
@@ -50,18 +48,27 @@ html {
 #work-wrapper {
   background: #121416;
   width: 100%;
-  height: 768px;
+  height: 1260px;
   color: #f2f2f2;
+  padding: 0px 30px;
 }
 
 #work-heading {
-  margin: 30px 30px;
+  margin: 30px 0px;
   max-width: 100%;
 }
 
 #work-gallery {
-  margin: 30px 30px;
+  margin: 30px 0px;
   max-width: 100%;
+}
+
+#contact-wrapper {
+  background: #121416;
+  width: 100%;
+  height: 768px;
+  color: #f2f2f2;
+  padding: 30px;
 }
 
 .header-logo {
@@ -70,11 +77,11 @@ html {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -199,11 +206,46 @@ h4 {
   display: grid;
 }
 
+.grid-sq1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sq1;
+}
+
+.grid-sq2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sq2;
+}
+
+.grid-sq3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sq3;
+}
+
+.grid-sq4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sq4;
+}
+
+.grid-sq5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sq5;
+}
+
+.grid-sq6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: sq6;
+}
+
 .grid-box-1 {
-  -ms-grid-columns: 350px 2fr;
-      grid-template-columns: 350px 2fr;
-  -ms-grid-rows: 350px 2fr;
-      grid-template-rows: 350px 2fr;
+      grid-template-areas: "sq1 sq2 sq3" "sq4 sq5 sq6";
+  -ms-grid-columns: 2fr 2fr 4fr;
+      grid-template-columns: 2fr 2fr 4fr;
 }
 
 .grid-gtc-2 {
@@ -218,17 +260,8 @@ h4 {
 
 .portfolio-card-small {
   margin: 10px;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: gray;
-  grid-gap: 2px;
-}
-
-.portfolio-card-large {
-  margin: 10px;
-  width: 600px;
-  height: 600px;
-  background: gray;
-  grid-gap: 2px;
 }
 /*# sourceMappingURL=main.css.map */

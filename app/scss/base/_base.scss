@@ -11,16 +11,28 @@ html {
   background: $bg-primary;
 }
 
-// =========
+footer {
+  background: $bg-primary-accent;
+  min-height: 120px;
+  color: $type-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+// =========================================
 // Id Styles
-// =========
+// =========================================
 // Header Section---------
 
 #header-wrapper {
   background-color: $bg-primary-accent;
-  img {
-    width: 50px;
-  }
+  min-height: 80px;
+  padding: 0px 30px;
+  // img {
+  //   width: 50px;
+  // }
 }
 
 #top-nav li {
@@ -29,25 +41,19 @@ html {
   list-style: none;
   padding: 20px;
 }
-#top-nav ul {
-  margin: 5px 30px 5px 5px;
-}
+// #top-nav ul {
+//   
+// }
 
 // Hero Section--------------
 
 #hero-wrapper {
   background: $bg-secondary;
-  width: 100%;
-  height: 768px;
-  position: relative;
+  min-height: 768px;
+  padding: 0px 30px;
 }
 
 #hero-info {
-  position: relative;
-  top: 252px;
-  bottom: 0px;
-  right: 0;
-  left: 0;
   background: $bg-primary-accent;
   color: $type-white;
   width: 100%;
@@ -59,22 +65,32 @@ html {
 #work-wrapper {
   background: $bg-primary;
   width: 100%;
-  height: 768px;
+  height: 1260px;
   color: $type-white;
+  padding: 0px 30px;
 }
 
 #work-heading {
-  margin: 30px 30px;
+  margin: 30px 0px;
   max-width: 100%;
 }
 #work-gallery {
-  margin: 30px 30px;
+  margin: 30px 0px;
   max-width: 100%;
 }
 
-// ============
+// Contact Section---------
+#contact-wrapper {
+  background: $bg-primary;
+  width: 100%;
+  height: 768px;
+  color: $type-white;
+  padding: 30px;
+}
+
+// ===========================================
 // Class Styles
-// ============
+// ===========================================
 .header-logo {
   margin-left: 30px;
   font-size: small;
