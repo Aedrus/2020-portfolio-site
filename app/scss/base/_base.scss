@@ -9,12 +9,21 @@
 
 html {
   background: $bg-primary;
+  font-family: $primary-font;
+  font-weight: 200;
+}
+
+main {
+  display: block;
 }
 
 footer {
+  display: block;
+  padding: 20px;
   background: $bg-primary-accent;
-  min-height: 120px;
   color: $type-white;
+  width: 100%;
+  height: 110px;
 }
 
 a {
@@ -27,9 +36,9 @@ a {
 // Header Section---------
 
 #header-wrapper {
-  background-color: $bg-primary-accent;
-  min-height: 80px;
-  padding: 0px 30px;
+  background: $bg-primary;
+  color: $type-white;
+  padding: 30px 6rem;
   // img {
   //   width: 50px;
   // }
@@ -39,59 +48,91 @@ a {
   color: $type-white;
   text-decoration: none;
   list-style: none;
-  padding: 20px;
+  padding: 0px 30px;
+  transition: 250ms ease-in-out;
 }
-// #top-nav ul {
-//   
-// }
+
+#top-nav li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: $primary-color;
+  border-radius: 1px;
+  width: 25px;
+  height: 3px;
+  transition: 250ms ease-in-out;
+  opacity: 0;
+  margin-top: 2px;
+}
+
+#top-nav li:hover:after {
+  opacity: 1;
+}
+
 
 // Hero Section--------------
-
 #hero-wrapper {
-  background: $bg-secondary;
-  min-height: 768px;
-  padding: 0px 30px;
+  // background: url(/assets/images/1x/TextureDesign-rev01.png);
+  background: $bg-primary;
+  height: 100vh;
+  padding: 10rem 6rem 18rem 6rem;
+
+  h1 {
+    transition: color 700ms ease-out;
+  }
+
+  h3 {
+    transition: color 700ms ease-out;
+  }
+}
+
+#hero-wrapper h1:hover {
+  color: $primary-color;
+}
+#hero-wrapper h3:hover {
+  color: $secondary-color;
 }
 
 #hero-info {
   background: $bg-primary-accent;
   color: $type-white;
-  width: 100%;
-  min-height: 120px;
+  // width: 100%;
+  padding: 3rem 6rem;
 }
 
 // Work Section---------------
 
 #work-wrapper {
   background: $bg-primary;
-  width: 100%;
-  height: 1260px;
+  // width: 100%;
   color: $type-white;
-  padding: 0px 30px;
+  padding: 5rem 6rem;
 }
 
 #work-heading {
-  margin: 30px 0px;
-  max-width: 100%;
+  margin-bottom: 60px;
+  text-align: center;
 }
 #work-gallery {
   margin: 30px 0px;
-  max-width: 100%;
 }
 
 // Contact Section---------
 #contact-wrapper {
-  background: $bg-primary;
-  width: 100%;
-  height: 768px;
+  background: $bg-primary-accent;
   color: $type-white;
-  padding: 30px;
+  padding: 4rem 6rem;
+}
+#contact-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  h2 {
+    line-height: 4rem;
+  }
 }
 
 // ===========================================
 // Class Styles
 // ===========================================
-.header-logo {
-  margin-left: 30px;
-  font-size: small;
-}
+

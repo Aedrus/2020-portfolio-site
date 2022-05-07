@@ -2,16 +2,24 @@
 // SASS Variables - Reuse code by invoking a named variable.
 // --------------------------
 
-// ======
+// ====================================
 // Colors
-// ======
-$bg-primary: hsl(220, 10, 8%);
+// ====================================
+$primary-color: #60B9FF;
+$primary-color-darker: #6C94BC;
+$primary-color-lighter: #F2FAFF;
+$secondary-color: #E4636C;
+
+$bg-primary: hsl(220, 10, 12%);
 $bg-primary-accent: hsl(220, 10, 15%);
 $bg-secondary: hsl(220, 0, 92%);
+$bg-secondary-accent: hsl(220, 0, 80%);
 
-$type-white: hsl(220, 0, 95%);
+$type-white: hsl(220, 0, 98%);
 $type-black: hsl(220, 0, 8%);
 
-// ==========
+// =======================================
 // Typography
-// ==========
+// ======================================
+$primary-font: 'Outfit', Lucida Sans, Arial, sans-serif;
+$secondary-font: 'Lora', Lucida Sans, Arial, sans-serif;

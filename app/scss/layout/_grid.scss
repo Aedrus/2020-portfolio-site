@@ -26,16 +26,23 @@
 
   // Grid Styles (Nested)
   &-box-1 {
+    // grid-template-areas: 
+    // "sq1 sq2 sq3"
+    // "sq4 sq5 sq6"
+    // ;
+    // grid-template-columns: repeat(autofit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+  }
+  &-box-2 {
+    grid-template-columns: repeat(auto-fit, minmax(200, 1fr));
+  }
+  &-contact {
     grid-template-areas: 
-    "sq1 sq2 sq3"
-    "sq4 sq5 sq6"
-    ;
-    grid-template-columns: 2fr 2fr 4fr;
-  }
-  &-gtc-2 {
-    grid-template-columns: 2fr 2fr;
-  }
-  &-gtc-3 {
-    grid-template-columns: 3fr 3fr;
+    "sq1 sq2"
+    "sq3 sq3"
+    "sq4 sq4"
+    "sq5 sq5"
+    "sq6 sq6";
   }
 }

@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="stylesheet" href="/dist/css/main.css">
-  <title>Mario Ferrera | Web Developer</title>
+  <title>Mario J. Ferrera | Web Developer</title>
 </head>
 <body>
   <!-- Header/Nav Section -->
   <header id="header-wrapper" class="flex flex-jc-sb flex-ai-c">
     <div class="header-logo flex flex-ai-c">
       <!-- <img src="/assets/images/Mario Ferrera_Brand Logo_Runic_White.png"> -->
-      <h3 class="t-white">Mario J. Ferrera</h3>
+      <h3>Mario J. Ferrera</h3>
     </div>
     <nav id="top-nav">
       <ul class="flex flex-jc-c flex-ai-c">
@@ -25,8 +26,8 @@
   <!-- Hero Section -->
   <main>
     <div id="hero-wrapper" class="flex flex-col flex-jc-c flex-ai-c">
-      <h1>Mario J. Ferrera</h1>
-      <h3>Front-End Developer & Designer</h3>
+      <h1 class="intro-title text-larger">Mario J. Ferrera</h1>
+      <h3 class="intro-title">Front-End Developer & Designer</h3>
     </div>
     <div id="hero-info" class="flex flex-col flex-jc-c flex-ai-c">
       <h3>I create stuff and do things.</h3>
@@ -34,25 +35,52 @@
   <!-- Work Section -->
     <div id="work-wrapper">
       <div id="work-heading">
-        <h2>Work</h2>
+        <h2>Portfolio Work</h2>
       </div>
-      <div id="work-gallery" class="flex flex-ai-c grid grid-box-1">
-        <div class="portfolio-card-small grid-sq1"></div>
-        <div class="portfolio-card-small grid-sq2"></div>
-        <div class="portfolio-card-small grid-sq3"></div>
-        <div class="portfolio-card-small grid-sq4"></div>
-        <div class="portfolio-card-small grid-sq5"></div>
-        <div class="portfolio-card-small grid-sq6"></div>
+      <div id="work-gallery" class="grid grid-box-1">
+        <article class="portfolio-card-small"></article>
+        <article class="portfolio-card-small"></article>
+        <article class="portfolio-card-small"></article>
+        <article class="portfolio-card-small"></article>
+        <article class="portfolio-card-small"></article>
+        <article class="portfolio-card-small"></article>
       </div>
     </div>
   <!-- Contact Section -->
-    <div id="contact-wrapper" class="flex flex-jc-fs">
-      <div>
+    <div id="contact-wrapper" class="grid grid-box-2 flex flex-jc-c flex-ai-c">
+      <div id="contact-header">
         <h2>Contact</h2>
         <p>I love creating new things and meeting new people. If you have any questions or want to work with me, feel free to reach out.</p>
       </div>
-      <div class=" flex flex-jc-c flex-ai-c">
-        <img src="/assets/images/Mario Ferrera_Brand Logo_Runic_White.png" alt="placeholder" width="600px">
+      <div class="contact-form">
+        <form action="#" method="post">
+          <ul class="grid grid-contact">
+            <li class="grid-sq1">
+              <label for="firstName">First Name*</label>
+              <input type="text" id="firstName">
+            </li>
+            <li class="grid-sq2">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName">
+            </li>
+            <li class="grid-sq3">
+              <label for="email">Email*</label>
+              <input type="text" id="email">
+            </li>
+            <li class="grid-sq4">
+              <label for="subject">Subject*</label>
+              <input type="text" id="subject">
+            </li>
+            <li class="grid-sq5">
+              <label for="message">Message*</label>
+              <textarea name="message" id="message" rows="3"></textarea>
+            </li>
+            <li class="grid-sq6 flex flex-jc-c">
+              <button type="button">Submit</button>
+            </li>
+          </ul>
+        </form>
+        <!-- <img src="/assets/images/Mario Ferrera_Brand Logo_Runic_White.png" alt="placeholder" width="600px"> -->
       </div>
     </div>
   </main>
