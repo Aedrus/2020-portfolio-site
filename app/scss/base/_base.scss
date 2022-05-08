@@ -8,7 +8,6 @@
 }
 
 html {
-  background: $bg-primary;
   font-family: $primary-font;
   font-weight: 200;
 }
@@ -20,7 +19,7 @@ main {
 footer {
   display: block;
   padding: 20px;
-  background: $bg-primary-accent;
+  background: $bg-primary;
   color: $type-white;
   width: 100%;
   height: 110px;
@@ -36,8 +35,8 @@ a {
 // Header Section---------
 
 #header-wrapper {
-  background: $bg-primary;
-  color: $type-white;
+  background: $bg-secondary;
+  color: $type-black;
   padding: 30px 6rem;
   // img {
   //   width: 50px;
@@ -45,11 +44,12 @@ a {
 }
 
 #top-nav li {
-  color: $type-white;
+  color: $type-black;
   text-decoration: none;
   list-style: none;
   padding: 0px 30px;
   transition: 250ms ease-in-out;
+  scroll-behavior: smooth;
 }
 
 #top-nav li::after {
@@ -58,7 +58,7 @@ a {
   position: absolute;
   background: $primary-color;
   border-radius: 1px;
-  width: 25px;
+  width: 55px;
   height: 3px;
   transition: 250ms ease-in-out;
   opacity: 0;
@@ -72,29 +72,47 @@ a {
 
 // Hero Section--------------
 #hero-wrapper {
-  // background: url(/assets/images/1x/TextureDesign-rev01.png);
-  background: $bg-primary;
+  background: $bg-secondary;
+  font-weight: 600;
   height: 100vh;
-  padding: 10rem 6rem 18rem 6rem;
+  padding: 10rem 15rem 18rem 15rem;
+  font-size: 1.5rem;
 
   h1 {
-    transition: color 700ms ease-out;
+    color: $type-black;
+    line-height: 1em;
   }
-
   h3 {
-    transition: color 700ms ease-out;
+    font-size: 1.7rem;
+    color: $primary-color;
+    padding: 15px 0px 30px 0px;
+    line-height: 1em;
   }
 }
 
-#hero-wrapper h1:hover {
-  color: $primary-color;
-}
-#hero-wrapper h3:hover {
-  color: $secondary-color;
+#hero-title {
+  // padding: 0px 2rem;
+  text-align: right;
+  p {
+    line-height: 1.4em;
+    font-size: 1.1em;
+    width: 100%;
+  }
 }
 
-#hero-info {
-  background: $bg-primary-accent;
+#hero-image {
+  transition: transform 300ms ease-in-out;
+  img {
+    border-radius: 30px;
+    width: 400px;
+    filter: grayscale(0%);
+  }
+  &:hover {
+    transform: scale(99%);
+  }
+}
+#hero-social {
+  background: $bg-primary;
   color: $type-white;
   // width: 100%;
   padding: 3rem 6rem;
@@ -103,15 +121,15 @@ a {
 // Work Section---------------
 
 #work-wrapper {
-  background: $bg-primary;
+  background: $bg-secondary;
   // width: 100%;
-  color: $type-white;
+  color: $type-black;
   padding: 5rem 6rem;
 }
 
 #work-heading {
   margin-bottom: 60px;
-  text-align: center;
+  margin-left: 10px;
 }
 #work-gallery {
   margin: 30px 0px;
@@ -136,3 +154,20 @@ a {
 // Class Styles
 // ===========================================
 
+.social-media-01 {
+  padding: 20px 0px 0px 0px;
+  i {
+    // margin: 10px 40px 0px 40px;
+    font-size: 1.8em;
+  }
+
+  a {
+    margin: 10px 20px 0px 20px;
+    text-decoration: none;
+    color: white;
+    transition: color 200ms ease-out;
+  }
+  a:hover {
+    color: $primary-color;
+  }
+}

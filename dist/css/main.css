@@ -1,129 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  background: #1c1e22;
-  font-family: "Outfit", Lucida Sans, Arial, sans-serif;
-  font-weight: 200;
-}
-
-main {
-  display: block;
-}
-
-footer {
-  display: block;
-  padding: 20px;
-  background: #22252a;
-  color: #fafafa;
-  width: 100%;
-  height: 110px;
-}
-
-a {
-  text-decoration: none;
-}
-
-#header-wrapper {
-  background: #1c1e22;
-  color: #fafafa;
-  padding: 30px 6rem;
-}
-
-#top-nav li {
-  color: #fafafa;
-  text-decoration: none;
-  list-style: none;
-  padding: 0px 30px;
-  -webkit-transition: 250ms ease-in-out;
-  transition: 250ms ease-in-out;
-}
-
-#top-nav li::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: #60B9FF;
-  border-radius: 1px;
-  width: 25px;
-  height: 3px;
-  -webkit-transition: 250ms ease-in-out;
-  transition: 250ms ease-in-out;
-  opacity: 0;
-  margin-top: 2px;
-}
-
-#top-nav li:hover:after {
-  opacity: 1;
-}
-
-#hero-wrapper {
-  background: #1c1e22;
-  height: 100vh;
-  padding: 10rem 6rem 18rem 6rem;
-}
-
-#hero-wrapper h1 {
-  -webkit-transition: color 700ms ease-out;
-  transition: color 700ms ease-out;
-}
-
-#hero-wrapper h3 {
-  -webkit-transition: color 700ms ease-out;
-  transition: color 700ms ease-out;
-}
-
-#hero-wrapper h1:hover {
-  color: #60B9FF;
-}
-
-#hero-wrapper h3:hover {
-  color: #E4636C;
-}
-
-#hero-info {
-  background: #22252a;
-  color: #fafafa;
-  padding: 3rem 6rem;
-}
-
-#work-wrapper {
-  background: #1c1e22;
-  color: #fafafa;
-  padding: 5rem 6rem;
-}
-
-#work-heading {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-#work-gallery {
-  margin: 30px 0px;
-}
-
-#contact-wrapper {
-  background: #22252a;
-  color: #fafafa;
-  padding: 4rem 6rem;
-}
-
-#contact-header {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-#contact-header h2 {
-  line-height: 4rem;
-}
-
 h1 {
   font-size: 3.6rem;
   font-weight: 600;
@@ -152,7 +28,7 @@ h4 {
 }
 
 .intro-title {
-  color: #F2FAFF;
+  color: #a6dbfc;
 }
 
 .text-larger {
@@ -161,6 +37,175 @@ h4 {
 
 p {
   font-family: "Lora", Lucida Sans, Arial, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Outfit", Lucida Sans, Arial, sans-serif;
+  font-weight: 200;
+}
+
+main {
+  display: block;
+}
+
+footer {
+  display: block;
+  padding: 20px;
+  background: #1c1e22;
+  color: #fafafa;
+  width: 100%;
+  height: 110px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header-wrapper {
+  background: #fafafa;
+  color: #141414;
+  padding: 30px 6rem;
+}
+
+#top-nav li {
+  color: #141414;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px 30px;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  scroll-behavior: smooth;
+}
+
+#top-nav li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #3ca9fb;
+  border-radius: 1px;
+  width: 55px;
+  height: 3px;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  opacity: 0;
+  margin-top: 2px;
+}
+
+#top-nav li:hover:after {
+  opacity: 1;
+}
+
+#hero-wrapper {
+  background: #fafafa;
+  font-weight: 600;
+  height: 100vh;
+  padding: 10rem 15rem 18rem 15rem;
+  font-size: 1.5rem;
+}
+
+#hero-wrapper h1 {
+  color: #141414;
+  line-height: 1em;
+}
+
+#hero-wrapper h3 {
+  font-size: 1.7rem;
+  color: #3ca9fb;
+  padding: 15px 0px 30px 0px;
+  line-height: 1em;
+}
+
+#hero-title {
+  text-align: right;
+}
+
+#hero-title p {
+  line-height: 1.4em;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+#hero-image {
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+#hero-image img {
+  border-radius: 30px;
+  width: 400px;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+#hero-image:hover {
+  -webkit-transform: scale(99%);
+          transform: scale(99%);
+}
+
+#hero-social {
+  background: #1c1e22;
+  color: #fafafa;
+  padding: 3rem 6rem;
+}
+
+#work-wrapper {
+  background: #fafafa;
+  color: #141414;
+  padding: 5rem 6rem;
+}
+
+#work-heading {
+  margin-bottom: 60px;
+  margin-left: 10px;
+}
+
+#work-gallery {
+  margin: 30px 0px;
+}
+
+#contact-wrapper {
+  background: #22252a;
+  color: #fafafa;
+  padding: 4rem 6rem;
+}
+
+#contact-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#contact-header h2 {
+  line-height: 4rem;
+}
+
+.social-media-01 {
+  padding: 20px 0px 0px 0px;
+}
+
+.social-media-01 i {
+  font-size: 1.8em;
+}
+
+.social-media-01 a {
+  margin: 10px 20px 0px 20px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 200ms ease-out;
+  transition: color 200ms ease-out;
+}
+
+.social-media-01 a:hover {
+  color: #3ca9fb;
 }
 
 .flex {
@@ -324,8 +369,43 @@ p {
       grid-template-areas: "sq1 sq2" "sq3 sq3" "sq4 sq4" "sq5 sq5" "sq6 sq6";
 }
 
-.portfolio-card-small {
-  margin: 10px;
+.grid-box-3 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-card-1 {
+  width: 400px;
+  height: 400px;
+  background: url(/assets/images/Ardent-Author_Screencap01.PNG);
+  background-size: 192%;
+  background-position: 50% -1px;
+  -webkit-transition: -webkit-transform 350ms ease-in-out;
+  transition: -webkit-transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 3px 3px 4px 0px;
+          box-shadow: rgba(0, 0, 0, 0.05) 3px 3px 4px 0px;
+}
+
+.portfolio-card-1:hover {
+  -webkit-transform: scale(97%);
+          transform: scale(97%);
+}
+
+.portfolio-card-2 {
+  width: 400px;
+  height: 400px;
+  background: gray;
+}
+
+.portfolio-card-3 {
+  width: 400px;
+  height: 400px;
+  background: gray;
+}
+
+.portfolio-card-4 {
   width: 400px;
   height: 400px;
   background: gray;

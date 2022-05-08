@@ -5,8 +5,34 @@
 // ==============================
 // Cards
 // ==============================
-.portfolio-card-small {
-  margin: 10px;
+.portfolio-card-1 {
+  width: 400px;
+  height: 400px;
+  background: url(/assets/images/Ardent-Author_Screencap01.PNG);
+  background-size: 192%;
+  background-position: 50% -1px;
+  transition: transform 350ms ease-in-out;
+  box-shadow: rgba($color: #000000, $alpha: 0.05) 3px 3px 4px 0px;
+
+  &:hover {
+    transform: scale(97%);
+  }
+}
+
+.portfolio-card-2 {
+  // margin: 5px;
+  width: 400px;
+  height: 400px;
+  background: gray;
+}
+.portfolio-card-3 {
+  // margin: 5px;
+  width: 400px;
+  height: 400px;
+  background: gray;
+}
+.portfolio-card-4 {
+  // margin: 5px;
   width: 400px;
   height: 400px;
   background: gray;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <script src="https://kit.fontawesome.com/4aee9abda7.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/dist/css/main.css">
   <title>Mario J. Ferrera | Web Developer</title>
 </head>
@@ -12,38 +12,46 @@
   <!-- Header/Nav Section -->
   <header id="header-wrapper" class="flex flex-jc-sb flex-ai-c">
     <div class="header-logo flex flex-ai-c">
-      <!-- <img src="/assets/images/Mario Ferrera_Brand Logo_Runic_White.png"> -->
+      <!-- <img src="/assets/images/Mario Ferrera_Brand Logo_Runic_White.png" width="25px"> -->
       <h3>Mario J. Ferrera</h3>
     </div>
     <nav id="top-nav">
       <ul class="flex flex-jc-c flex-ai-c">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>Work</li></a>
-        <a href="#"><li>Contact</li></a>
+        <a href="#hero-wrapper"><li>Home</li></a>
+        <a href="#work-wrapper"><li>Work</li></a>
+        <a href="#contact-wrapper"><li>Contact</li></a>
       </ul>
     </nav>
   </header>
   <!-- Hero Section -->
   <main>
-    <div id="hero-wrapper" class="flex flex-col flex-jc-c flex-ai-c">
-      <h1 class="intro-title text-larger">Mario J. Ferrera</h1>
-      <h3 class="intro-title">Front-End Developer & Designer</h3>
+    <div id="hero-wrapper" class="grid grid-box-1 flex flex-ai-c flex-jc-c">
+      <div id="hero-title">
+        <h1 class="intro-title text-larger">Mario J. Ferrera</h1>
+        <h3 class="intro-title"><i class="fa-solid fa-code"></i> Front-End Developer & Designer</h3>
+        <p>A graphic designer and architect of websites by trade. My passion lies in the building of new projects and various forms of content creation. </p>
+      </div>
+      <div id="hero-image" class="flex flex-jc-c">
+        <img src="/assets/images/Mario_Ferrera_Headshot.jpg" alt="Mario_Ferrera_Headshot">
+      </div>
     </div>
-    <div id="hero-info" class="flex flex-col flex-jc-c flex-ai-c">
-      <h3>I create stuff and do things.</h3>
+    <div id="hero-social" class="flex flex-col flex-jc-c flex-ai-c">
+      <h3>Take a look at some of my projects and content.</h3>
+      <div class="social-media-01 grid grid-box-3">
+        <a href="https://github.com/Aedrus" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-wordpress"></i></a>
+      </div>
     </div>
   <!-- Work Section -->
     <div id="work-wrapper">
       <div id="work-heading">
         <h2>Portfolio Work</h2>
       </div>
+      
       <div id="work-gallery" class="grid grid-box-1">
-        <article class="portfolio-card-small"></article>
-        <article class="portfolio-card-small"></article>
-        <article class="portfolio-card-small"></article>
-        <article class="portfolio-card-small"></article>
-        <article class="portfolio-card-small"></article>
-        <article class="portfolio-card-small"></article>
+        <article class="portfolio-card-1"></article>
+        <article class="portfolio-card-2"></article>
+        <article class="portfolio-card-3"></article>
       </div>
     </div>
   <!-- Contact Section -->
