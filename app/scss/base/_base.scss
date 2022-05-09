@@ -17,16 +17,16 @@ main {
 }
 
 footer {
-  display: block;
-  padding: 20px;
+  padding: 2rem 6rem;
   background: $bg-primary;
   color: $type-white;
   width: 100%;
-  height: 110px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+  color: $type-black;
 }
 
 // =========================================
@@ -43,13 +43,20 @@ a {
   // }
 }
 
+#header-logo a {
+    color: $type-black;
+    transition: 250ms ease-in-out;
+    &:hover {
+      color: $primary-color;
+    }
+}
+
 #top-nav li {
   color: $type-black;
   text-decoration: none;
   list-style: none;
   padding: 0px 30px;
   transition: 250ms ease-in-out;
-  scroll-behavior: smooth;
 }
 
 #top-nav li::after {
@@ -58,7 +65,7 @@ a {
   position: absolute;
   background: $primary-color;
   border-radius: 1px;
-  width: 55px;
+  width: 58px;
   height: 3px;
   transition: 250ms ease-in-out;
   opacity: 0;
@@ -92,10 +99,10 @@ a {
 
 #hero-title {
   // padding: 0px 2rem;
-  text-align: right;
+  text-align: left;
   p {
     line-height: 1.4em;
-    font-size: 1.1em;
+    font-size: 1.0em;
     width: 100%;
   }
 }
@@ -114,6 +121,7 @@ a {
 #hero-social {
   background: $bg-primary;
   color: $type-white;
+
   // width: 100%;
   padding: 3rem 6rem;
 }
@@ -148,6 +156,23 @@ a {
   h2 {
     line-height: 4rem;
   }
+}
+
+// Footer Section ------------------
+#footer-nav a {
+  color: $type-white;
+  list-style: none;
+
+  li {
+    padding: 0px 20px;
+  }
+}
+#footer-copy {
+  color: $type-white;
+}
+#footer-social a {
+  color: $type-white;
+  padding: 0px 10px;
 }
 
 // ===========================================

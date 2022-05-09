@@ -39,6 +39,10 @@ p {
   font-family: "Lora", Lucida Sans, Arial, sans-serif;
 }
 
+.form-req {
+  color: red;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -56,22 +60,32 @@ main {
 }
 
 footer {
-  display: block;
-  padding: 20px;
+  padding: 2rem 6rem;
   background: #1c1e22;
   color: #fafafa;
   width: 100%;
-  height: 110px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+  color: #141414;
 }
 
 #header-wrapper {
   background: #fafafa;
   color: #141414;
   padding: 30px 6rem;
+}
+
+#header-logo a {
+  color: #141414;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+#header-logo a:hover {
+  color: #3ca9fb;
 }
 
 #top-nav li {
@@ -81,7 +95,6 @@ a {
   padding: 0px 30px;
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
-  scroll-behavior: smooth;
 }
 
 #top-nav li::after {
@@ -90,7 +103,7 @@ a {
   position: absolute;
   background: #3ca9fb;
   border-radius: 1px;
-  width: 55px;
+  width: 58px;
   height: 3px;
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
@@ -123,12 +136,12 @@ a {
 }
 
 #hero-title {
-  text-align: right;
+  text-align: left;
 }
 
 #hero-title p {
   line-height: 1.4em;
-  font-size: 1.1em;
+  font-size: 1.0em;
   width: 100%;
 }
 
@@ -186,6 +199,24 @@ a {
 
 #contact-header h2 {
   line-height: 4rem;
+}
+
+#footer-nav a {
+  color: #fafafa;
+  list-style: none;
+}
+
+#footer-nav a li {
+  padding: 0px 20px;
+}
+
+#footer-copy {
+  color: #fafafa;
+}
+
+#footer-social a {
+  color: #fafafa;
+  padding: 0px 10px;
 }
 
 .social-media-01 {
@@ -384,8 +415,6 @@ a {
   transition: -webkit-transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 3px 3px 4px 0px;
-          box-shadow: rgba(0, 0, 0, 0.05) 3px 3px 4px 0px;
 }
 
 .portfolio-card-1:hover {
@@ -422,7 +451,6 @@ a {
 }
 
 .contact-form li {
-  padding: 10px 20px 10px 0px;
   line-height: 20px;
   width: 100%;
 }
@@ -443,11 +471,24 @@ a {
   resize: vertical;
 }
 
+.contact-form-width {
+  padding-right: 20px;
+}
+
 .contact-form button {
-  width: 30%;
+  width: 20%;
   text-align: center;
   border: none;
-  border-radius: 3px;
-  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 40px 0px 0px 0px;
+  padding: 12px 20px;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  font-weight: 700;
+}
+
+.contact-form button:hover {
+  background: #3ca9fb;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

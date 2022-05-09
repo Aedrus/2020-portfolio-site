@@ -11,9 +11,8 @@
 <body>
   <!-- Header/Nav Section -->
   <header id="header-wrapper" class="flex flex-jc-sb flex-ai-c">
-    <div class="header-logo flex flex-ai-c">
-      <!-- <img src="/assets/images/Mario Ferrera_Brand Logo_Runic_White.png" width="25px"> -->
-      <h3>Mario J. Ferrera</h3>
+    <div id="header-logo" class="flex flex-ai-c">
+      <a href="#"><h3>Mario J. Ferrera</h3></a>
     </div>
     <nav id="top-nav">
       <ul class="flex flex-jc-c flex-ai-c">
@@ -26,17 +25,17 @@
   <!-- Hero Section -->
   <main>
     <div id="hero-wrapper" class="grid grid-box-1 flex flex-ai-c flex-jc-c">
+      <div id="hero-image" class="flex flex-jc-c">
+        <img src="/assets/images/Mario_Ferrera_Headshot.jpg" alt="Mario_Ferrera_Headshot">
+      </div>
       <div id="hero-title">
         <h1 class="intro-title text-larger">Mario J. Ferrera</h1>
         <h3 class="intro-title"><i class="fa-solid fa-code"></i> Front-End Developer & Designer</h3>
         <p>A graphic designer and architect of websites by trade. My passion lies in the building of new projects and various forms of content creation. </p>
       </div>
-      <div id="hero-image" class="flex flex-jc-c">
-        <img src="/assets/images/Mario_Ferrera_Headshot.jpg" alt="Mario_Ferrera_Headshot">
-      </div>
     </div>
     <div id="hero-social" class="flex flex-col flex-jc-c flex-ai-c">
-      <h3>Take a look at some of my projects and content.</h3>
+      <h3>A quick look at what I'm working on.</h3>
       <div class="social-media-01 grid grid-box-3">
         <a href="https://github.com/Aedrus" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-wordpress"></i></a>
@@ -63,8 +62,8 @@
       <div class="contact-form">
         <form action="#" method="post">
           <ul class="grid grid-contact">
-            <li class="grid-sq1">
-              <label for="firstName">First Name*</label>
+            <li class="grid-sq1 contact-form-width">
+              <label for="firstName">First Name<span class="form-req"> *</span></label>
               <input type="text" id="firstName">
             </li>
             <li class="grid-sq2">
@@ -72,15 +71,15 @@
               <input type="text" id="lastName">
             </li>
             <li class="grid-sq3">
-              <label for="email">Email*</label>
+              <label for="email">Email<span class="form-req"> *</span></label>
               <input type="text" id="email">
             </li>
             <li class="grid-sq4">
-              <label for="subject">Subject*</label>
+              <label for="subject">Subject<span class="form-req"> *</span></label>
               <input type="text" id="subject">
             </li>
             <li class="grid-sq5">
-              <label for="message">Message*</label>
+              <label for="message">Message<span class="form-req"> *</span></label>
               <textarea name="message" id="message" rows="3"></textarea>
             </li>
             <li class="grid-sq6 flex flex-jc-c">
@@ -93,8 +92,21 @@
     </div>
   </main>
   <!-- Footer -->
-  <footer class="flex flex-jc-c flex-ai-c">
-    <p>Built By Mario J. Ferrera. Work in progress.</p>
+  <footer class="grid grid-box-1">
+    <div id="footer-nav" >
+      <ul class="flex flex-jc-c flex-ai-c">
+        <a href="#hero-wrapper"><li>Home</li></a>
+        <a href="#work-wrapper"><li>Work</li></a>
+        <a href="#contact-wrapper"><li>Contact</li></a>
+      </ul>
+    </div>
+    <div id="footer-copy">
+      <p>All Content &copy; 2022. Mario J. Ferrera.</p>
+    </div>
+    <div id="footer-social">
+      <a href="https://github.com/Aedrus" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-wordpress"></i></a>
+    </div>
   </footer>
 </body>
 </html>

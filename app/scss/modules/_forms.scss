@@ -4,8 +4,6 @@
 .contact-form {
   padding: 30px 0px;
   margin: 0;
-  
-  // overflow: hidden;
 }
 .contact-form ul {
   text-decoration: none;
@@ -13,7 +11,6 @@
 }
 
 .contact-form li {
-  padding: 10px 20px 10px 0px;
   line-height: 20px;
   width: 100%;
 }
@@ -34,10 +31,22 @@
   resize: vertical;
 }
 
+.contact-form-width {
+  padding-right: 20px;
+}
+
 .contact-form button {
-  width: 30%;
+  width: 20%;
   text-align: center;
   border: none;
-  border-radius: 3px;
-  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 40px 0px 0px 0px;
+  padding: 12px 20px;
+  transition: 250ms ease-in-out;
+  font-weight: 700;
+
+  &:hover {
+    background: $primary-color;
+    cursor: pointer;
+  }
 }
