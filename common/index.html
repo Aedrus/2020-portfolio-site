@@ -10,47 +10,77 @@
 </head>
 <body>
   <!-- Header/Nav Section -->
-  <header id="header-wrapper" class="flex flex-jc-sb flex-ai-c">
-    <div id="header-logo" class="flex flex-ai-c">
-      <a href="#"><h3>Mario J. Ferrera</h3></a>
+  <header>
+    <picture>
+      <source type="image/webp" media="(min-width:650px)" srcset="/assets/images/webp/circle_texture.webp">
+      <img src="/assets/images/circle_texture.png" alt="background circle top" class="bg-circle-top">
+    </picture>
+    <div id="header-wrapper" class="flex flex-jc-sb flex-ai-c">
+      <div id="header-logo" class="flex flex-ai-c">
+        <a href="#"><h3>Mario J. Ferrera</h3></a>
+      </div>
+      <nav id="top-nav">
+        <ul class="flex flex-jc-c flex-ai-c">
+          <a href="#hero-wrapper"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#work-wrapper"><li>Portfolio</li></a>
+          <a href="#contact-wrapper"><li>Contact</li></a>
+        </ul>
+      </nav>
     </div>
-    <nav id="top-nav">
-      <ul class="flex flex-jc-c flex-ai-c">
-        <a href="#hero-wrapper"><li>Home</li></a>
-        <a href="#work-wrapper"><li>Work</li></a>
-        <a href="#contact-wrapper"><li>Contact</li></a>
-      </ul>
-    </nav>
   </header>
   <!-- Hero Section -->
   <main>
-    <div id="hero-wrapper" class="grid grid-box-1 flex flex-ai-c flex-jc-c">
-      <div id="hero-image" class="flex flex-jc-c">
-        <img src="/assets/images/Mario_Ferrera_Headshot.jpg" alt="Mario_Ferrera_Headshot">
+    <div id="hero-section-prime">
+      <div id="hero-wrapper" class="flex flex-ai-c flex-jc-c">
+        <div id="hero-title">
+          <h1 class="intro-title text-larger">Mario J. Ferrera</h1>
+          <h3 class="intro-title"><i class="fa-solid fa-code"></i> Front-End Developer & Designer</h3>
+          <p>A graphic designer and architect of websites by trade. My passion lies in the building of new projects and various forms of content creation. </p>
+        </div>
       </div>
-      <div id="hero-title">
-        <h1 class="intro-title text-larger">Mario J. Ferrera</h1>
-        <h3 class="intro-title"><i class="fa-solid fa-code"></i> Front-End Developer & Designer</h3>
-        <p>A graphic designer and architect of websites by trade. My passion lies in the building of new projects and various forms of content creation. </p>
-      </div>
+      <!-- * Hero Circle Bottom -->
+        <picture>
+          <source type="image/webp" media="(min-width:650px)" srcset="/assets/images/webp/circle_texture.webp">
+          <img src="/assets/images/circle_texture.png" alt="background circle bottom" class="bg-circle-bottom">
+        </picture>
     </div>
-    <div id="hero-social" class="flex flex-col flex-jc-c flex-ai-c">
-      <h3>A quick look at what I'm working on.</h3>
+    <!-- aside Social -->
+    <div id="aside-social" class="flex flex-col flex-jc-c flex-ai-c">
+      <h3>Have a look at what I'm working on</h3>
       <div class="social-media-01 grid grid-box-3">
         <a href="https://github.com/Aedrus" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-wordpress"></i></a>
       </div>
+    </div>
+  <!-- About Section -->
+  <div id="about-wrapper" class="grid grid-box-1">
+      <div id="about-image" class="flex flex-jc-end">
+        <img src="/assets/images/Mario_Ferrera_Headshot.jpg" alt="Mario_Ferrera_Headshot">
+      </div>
+      <div>
+        <h2>About Me</h2>
+        <p>Hi there! My name is Mario, and I am a front-end developer who enjoys building new, creative sites and improving existing systems. In my work I focus on functionality, responsivity, and clean interfaces. I also value knowledge and strongly believe that, through time, we can learn to solve most problems.
+        </p>
+        <br>
+        <p>
+          Aside from my profession, I'm also an avid media composer and writer in my spare time. I love learning new things and pursuing my passions, when time is not so scarce.
+        </p>
+      </div>
+    </div>
+    <!-- Aside Social -->
+    <div id="aside-social" class="flex flex-col flex-jc-c flex-ai-c">
+      <h2></h2>
     </div>
   <!-- Work Section -->
     <div id="work-wrapper">
       <div id="work-heading">
         <h2>Portfolio Work</h2>
       </div>
-      
-      <div id="work-gallery" class="grid grid-box-1">
+      <div id="work-gallery" class="grid grid-gallery">
         <article class="portfolio-card-1"></article>
-        <article class="portfolio-card-2"></article>
-        <article class="portfolio-card-3"></article>
+        <!-- <article class="portfolio-card-2"></article> -->
+        <!-- <article class="portfolio-card-3"></article> -->
       </div>
     </div>
   <!-- Contact Section -->
@@ -92,20 +122,23 @@
     </div>
   </main>
   <!-- Footer -->
-  <footer class="grid grid-box-1">
-    <div id="footer-nav" >
-      <ul class="flex flex-jc-c flex-ai-c">
-        <a href="#hero-wrapper"><li>Home</li></a>
-        <a href="#work-wrapper"><li>Work</li></a>
-        <a href="#contact-wrapper"><li>Contact</li></a>
-      </ul>
-    </div>
-    <div id="footer-copy">
-      <p>All Content &copy; 2022. Mario J. Ferrera.</p>
-    </div>
+  <footer class="grid grid-footer">
     <div id="footer-social">
+      <p>My Links</p>
       <a href="https://github.com/Aedrus" target="_blank"><i class="fa-brands fa-github"></i></a>
       <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-wordpress"></i></a>
+      <a href="https://www.instagram.com/marioferrera32/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div id="footer-copy" class="flex flex-jc-c flex-ai-c">
+      <p>All Content &copy; 2022. Mario J. Ferrera.</p>
+    </div>
+    <div id="footer-nav" class="flex flex-jc-c">
+      <ul class="flex flex-jc-c flex-ai-c">
+        <a href="#hero-wrapper"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#work-wrapper"><li>Portfolio</li></a>
+        <a href="#contact-wrapper"><li>Contact</li></a>
+      </ul>
     </div>
   </footer>
 </body>

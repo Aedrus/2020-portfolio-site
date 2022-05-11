@@ -13,11 +13,12 @@ html {
 }
 
 main {
+  position: relative;
   display: block;
 }
 
 footer {
-  padding: 2rem 6rem;
+  padding: 4rem 6rem;
   background: $bg-primary;
   color: $type-white;
   width: 100%;
@@ -35,39 +36,46 @@ a {
 // Header Section---------
 
 #header-wrapper {
+  position: relative;
   background: $bg-secondary;
   color: $type-black;
   padding: 30px 6rem;
-  // img {
-  //   width: 50px;
-  // }
 }
 
 #header-logo a {
-    color: $type-black;
+    color: $type-white;
     transition: 250ms ease-in-out;
+    z-index: 1;
+
     &:hover {
-      color: $primary-color;
+      color: $type-black;
     }
 }
+#top-nav {
+  z-index: 1;
+}
 
-#top-nav li {
+#top-nav a {
+  margin: 0px 25px;
+}
+
+#top-nav ul {
   color: $type-black;
-  text-decoration: none;
+  font-weight: 500;
   list-style: none;
-  padding: 0px 30px;
   transition: 250ms ease-in-out;
+  text-align: center;
 }
 
 #top-nav li::after {
   content: "";
   display: block;
-  position: absolute;
+  position: relative;
   background: $primary-color;
-  border-radius: 1px;
-  width: 58px;
-  height: 3px;
-  transition: 250ms ease-in-out;
+  border-radius: 5px;
+  width: 100%;
+  height: 2.5px;
+  transition: 200ms ease-in-out;
   opacity: 0;
   margin-top: 2px;
 }
@@ -78,7 +86,13 @@ a {
 
 
 // Hero Section--------------
+#hero-section-prime {
+  position: relative;
+  overflow: hidden;
+}
+
 #hero-wrapper {
+  position: relative;
   background: $bg-secondary;
   font-weight: 600;
   height: 100vh;
@@ -98,49 +112,55 @@ a {
 }
 
 #hero-title {
-  // padding: 0px 2rem;
   text-align: left;
+  z-index: 1;
+
   p {
     line-height: 1.4em;
     font-size: 1.0em;
-    width: 100%;
+    width: 28vw;
   }
 }
+// Aside social(s)
 
-#hero-image {
-  transition: transform 300ms ease-in-out;
-  img {
-    border-radius: 30px;
-    width: 400px;
-    filter: grayscale(0%);
-  }
-  &:hover {
-    transform: scale(99%);
-  }
-}
-#hero-social {
-  background: $bg-primary;
+#aside-social {
+  background: $bg-primary-accent;
   color: $type-white;
-
-  // width: 100%;
   padding: 3rem 6rem;
 }
+// About Section --------------
+#about-wrapper {
+  background: $bg-secondary;
+  color: $type-black;
+  padding: 5rem 16rem;
+  text-align: center;
+}
+
+#about-image {
+  margin: 0px 40px;
+  z-index: 1;
+  img {
+    border-radius: 30px;
+    width: 500px;
+    filter: grayscale(5%);
+  }
+}
+
 
 // Work Section---------------
 
 #work-wrapper {
   background: $bg-secondary;
-  // width: 100%;
   color: $type-black;
-  padding: 5rem 6rem;
+  padding: 5rem 16rem;
+  text-align: center;
 }
 
 #work-heading {
-  margin-bottom: 60px;
-  margin-left: 10px;
+  margin-bottom: 80px;
 }
 #work-gallery {
-  margin: 30px 0px;
+  margin: 50px 0px;
 }
 
 // Contact Section---------
@@ -162,17 +182,29 @@ a {
 #footer-nav a {
   color: $type-white;
   list-style: none;
+  margin: 0px 1rem;
 
-  li {
-    padding: 0px 20px;
-  }
+}
+
+#footer-nav a:hover {
+  color: $primary-color;
 }
 #footer-copy {
   color: $type-white;
 }
 #footer-social a {
   color: $type-white;
-  padding: 0px 10px;
+  margin: 0px 0.5rem;
+  padding: 0px 5px;
+  transition: 200ms ease-in-out;
+}
+
+#footer-social p {
+  margin: 0px 0px 10px 0px;
+}
+
+#footer-social a:hover {
+  color: $primary-color;
 }
 
 // ===========================================
@@ -195,4 +227,19 @@ a {
   a:hover {
     color: $primary-color;
   }
+}
+
+.bg-circle-top {
+  position: absolute;
+  top: -650px;
+  left: -450px;
+  height: 110vh;
+  z-index: 1;
+}
+.bg-circle-bottom {
+  position: absolute;
+  top: 500px;
+  right: -350px;
+  height: 100vh;
+  z-index: 0;
 }

@@ -31,11 +31,11 @@
     // "sq4 sq5 sq6"
     // ;
     // grid-template-columns: repeat(autofit, minmax(400px, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     gap: 20px;
   }
   &-box-2 {
-    grid-template-columns: repeat(auto-fit, minmax(200, 1fr));
+    grid-template-columns: repeat(auto-fit);
   }
   &-contact {
     grid-template-areas: 
@@ -45,7 +45,19 @@
     "sq5 sq5"
     "sq6 sq6";
   }
+  &-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+  }
+
   &-box-3 {
     grid-template-columns: 1fr 1fr;
+  }
+
+  &-footer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
 }

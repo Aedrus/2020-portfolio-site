@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4aee9abda7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/dist/css/main.css">
+  <title>Mario J. Ferrera | About</title>
+</head>
+<body>
+  <!-- Header/Nav Section -->
+  <header id="header-wrapper" class="flex flex-jc-sb flex-ai-c">
+    <div id="header-logo" class="flex flex-ai-c">
+      <a href="#"><h3>Mario J. Ferrera</h3></a>
+    </div>
+    <nav id="top-nav">
+      <ul class="flex flex-jc-c flex-ai-c">
+        <a href="#hero-wrapper"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#work-wrapper"><li>Portfolio</li></a>
+        <a href="#contact-wrapper"><li>Contact</li></a>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <main>
+    <div id="hero-wrapper" class="grid grid-box-1 flex flex-ai-c flex-jc-c">
+      <picture>
+        <source type="image/webp" media="(min-width:650px)" srcset="/assets/images/webp/circle_texture.webp">
+        <img src="/assets/images/Mario_Ferrera_Headshot.jpg" alt="Flowers" class="bg-circle">
+      </picture>
+      <div id="hero-image" class="flex flex-jc-end">
+        <img src="/assets/images/Mario_Ferrera_Headshot.jpg" alt="Mario_Ferrera_Headshot">
+      </div>
+      <div id="hero-title">
+        <h1 class="intro-title text-larger">Mario J. Ferrera</h1>
+        <h3 class="intro-title"><i class="fa-solid fa-code"></i> Front-End Developer & Designer</h3>
+        <p>A graphic designer and architect of websites by trade. My passion lies in the building of new projects and various forms of content creation. </p>
+      </div>
+    </div>
+    <div id="hero-social" class="flex flex-col flex-jc-c flex-ai-c">
+      <h3>Want a quick look at what I'm working on?</h3>
+      <div class="social-media-01 grid grid-box-3">
+        <a href="https://github.com/Aedrus" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-wordpress"></i></a>
+      </div>
+    </div>
+  <!-- Work Section -->
+    <div id="work-wrapper">
+      <div id="work-heading">
+        <h2>Portfolio Work</h2>
+      </div>
+      <div id="work-gallery" class="grid grid-gallery">
+        <article class="portfolio-card-1"></article>
+        <article class="portfolio-card-2"></article>
+        <article class="portfolio-card-3"></article>
+      </div>
+    </div>
+  <!-- Contact Section -->
+    <div id="contact-wrapper" class="grid grid-box-2 flex flex-jc-c flex-ai-c">
+      <div id="contact-header">
+        <h2>Contact</h2>
+        <p>I love creating new things and meeting new people. If you have any questions or want to work with me, feel free to reach out.</p>
+      </div>
+      <div class="contact-form">
+        <form action="#" method="post">
+          <ul class="grid grid-contact">
+            <li class="grid-sq1 contact-form-width">
+              <label for="firstName">First Name<span class="form-req"> *</span></label>
+              <input type="text" id="firstName">
+            </li>
+            <li class="grid-sq2">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName">
+            </li>
+            <li class="grid-sq3">
+              <label for="email">Email<span class="form-req"> *</span></label>
+              <input type="text" id="email">
+            </li>
+            <li class="grid-sq4">
+              <label for="subject">Subject<span class="form-req"> *</span></label>
+              <input type="text" id="subject">
+            </li>
+            <li class="grid-sq5">
+              <label for="message">Message<span class="form-req"> *</span></label>
+              <textarea name="message" id="message" rows="3"></textarea>
+            </li>
+            <li class="grid-sq6 flex flex-jc-c">
+              <button type="button">Submit</button>
+            </li>
+          </ul>
+        </form>
+        <!-- <img src="/assets/images/Mario Ferrera_Brand Logo_Runic_White.png" alt="placeholder" width="600px"> -->
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="grid grid-box-1">
+    <div id="footer-social">
+      <p>My Links</p>
+      <a href="https://github.com/Aedrus" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-wordpress"></i></a>
+      <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div id="footer-copy" class="flex flex-jc-c flex-ai-c">
+      <p>All Content &copy; 2022. Mario J. Ferrera.</p>
+    </div>
+    <div id="footer-nav" class="flex flex-jc-c">
+      <ul class="flex flex-jc-c flex-ai-c">
+        <a href="#hero-wrapper"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#work-wrapper"><li>Portfolio</li></a>
+        <a href="#contact-wrapper"><li>Contact</li></a>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
