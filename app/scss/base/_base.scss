@@ -19,7 +19,7 @@ main {
 
 footer {
   padding: 2rem 2%;
-  background: $bg-primary;
+  background: $bg-primary-accent;
   color: $type-white;
   text-align: center;
 }
@@ -35,16 +35,16 @@ a {
 // Header Section---------
 
 #header-wrapper {
-  position: relative;
   background: $bg-secondary;
   color: $type-black;
-  padding: 30px 5%;
+  padding: 20px 5%;
+  z-index: 2;
 }
 
 #header-logo a {
     color: $type-white;
     transition: 250ms ease-in-out;
-    z-index: 1;
+    z-index: 4;
 
     &:hover {
       color: $type-black;
@@ -88,6 +88,7 @@ a {
 #hero-section-prime {
   position: relative;
   overflow: hidden;
+  z-index: 2;
 }
 
 #hero-wrapper {
@@ -97,9 +98,10 @@ a {
   height: 100vh;
   padding: 10rem 15rem 18rem 15rem;
   font-size: 1.5rem;
+  
 
   h1 {
-    color: $type-black;
+    color: $bg-primary-accent;
     line-height: 1em;
   }
   h3 {
@@ -120,7 +122,7 @@ a {
     font-size: 1.3rem;
   }
 }
-// Aside social(s)
+// Aside Social(s)
 
 #aside-social {
   background: $bg-primary;
@@ -130,9 +132,10 @@ a {
 // About Section --------------
 #about-wrapper {
   position: relative;
+  overflow: hidden;
   background: $bg-primary-accent;
   color: $type-white;
-  padding: 3rem 20%;
+  padding: 5rem 20%;
   height: 100vh;
   line-height: 1.4rem;
 
@@ -141,6 +144,7 @@ a {
     padding-bottom: 2.5rem;
   }
 }
+
 
 #about-image {
   margin: 20px 20px;
@@ -154,28 +158,32 @@ a {
 
 #about-info {
   padding: 0 40px;
-
 }
+// About Skills Section
 
 #about-skills {
+  position: relative;
+  overflow: hidden;
   padding: 5rem 20%;
   height: 60vh;
+  z-index: 1;
 
   h2 {
-    color: $type-black;
+    color: $bg-primary-accent;
     text-align: center;
     margin-bottom: 4rem;
   }
 
   li {
     list-style: none;
-    // margin: auto;
   }
 }
 
 // Work Section---------------
 
 #work-wrapper {
+  position: relative;
+  overflow: hidden;
   background: $bg-primary-accent;
   color: $type-white;
   padding: 5rem 20%;
@@ -192,16 +200,23 @@ a {
 
 // Contact Section---------
 #contact-wrapper {
+  position: relative;
   background: $bg-secondary;
   color: $type-black;
-  padding: 4rem 20%;
+  padding: 5rem 20%;
+  z-index: 3;
+  
+  h3 {
+    color: $primary-color-darker;
+  }
 }
 #contact-header {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
+  
   h2 {
-    line-height: 4rem;
+    line-height: 2rem;
     margin-bottom: 2rem;
   }
 }
@@ -211,7 +226,6 @@ a {
   color: $type-white;
   list-style: none;
   margin: 0px 1rem;
-
 }
 
 #footer-nav a:hover {
@@ -239,6 +253,10 @@ a {
 // Class Styles
 // ===========================================
 
+.fa-solid {
+  margin-right: 5px;
+}
+
 .social-media-01 {
   padding: 20px 0px 0px 0px;
   i {
@@ -261,7 +279,7 @@ a {
   top: -650px;
   left: -450px;
   height: 110vh;
-  z-index: 1;
+  z-index: 3;
 }
 .bg-circle-bottom {
   position: absolute;
@@ -269,4 +287,36 @@ a {
   right: -350px;
   height: 100vh;
   z-index: 0;
+}
+.bg-circle-about {
+  position: absolute;
+  bottom: 1520px;
+  left: -500px;
+  height: 98vh;
+  z-index: 0;
+}
+.bg-circle-work {
+  position: absolute;
+  bottom: -600px;
+  right: -600px;
+  height: 98vh;
+  z-index: 0;
+}
+
+.contact-field {
+  text-align: center;
+  margin: 20px 0px;
+  line-height: 3rem;
+  font-weight: 500;
+
+  a {
+    font-size: 1.5rem;
+    margin: 0px 0.2rem;
+    padding: 0px 5px;
+    transition: 200ms ease-in-out;
+  }
+}
+
+.contact-field a:hover {
+  color: $primary-color;
 }

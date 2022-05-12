@@ -19,6 +19,10 @@ h4 {
   font-size: 1rem;
 }
 
+.t-primary {
+  color: #229fff;
+}
+
 .t-white {
   color: #fafafa;
 }
@@ -58,7 +62,7 @@ main {
 
 footer {
   padding: 2rem 2%;
-  background: #1c1e22;
+  background: #191e29;
   color: #fafafa;
   text-align: center;
 }
@@ -69,17 +73,17 @@ a {
 }
 
 #header-wrapper {
-  position: relative;
   background: #fafafa;
   color: #141414;
-  padding: 30px 5%;
+  padding: 20px 5%;
+  z-index: 2;
 }
 
 #header-logo a {
   color: #fafafa;
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
-  z-index: 1;
+  z-index: 4;
 }
 
 #header-logo a:hover {
@@ -124,6 +128,7 @@ a {
 #hero-section-prime {
   position: relative;
   overflow: hidden;
+  z-index: 2;
 }
 
 #hero-wrapper {
@@ -136,7 +141,7 @@ a {
 }
 
 #hero-wrapper h1 {
-  color: #141414;
+  color: #191e29;
   line-height: 1em;
 }
 
@@ -166,9 +171,10 @@ a {
 
 #about-wrapper {
   position: relative;
+  overflow: hidden;
   background: #191e29;
   color: #fafafa;
-  padding: 3rem 20%;
+  padding: 5rem 20%;
   height: 100vh;
   line-height: 1.4rem;
 }
@@ -193,12 +199,15 @@ a {
 }
 
 #about-skills {
+  position: relative;
+  overflow: hidden;
   padding: 5rem 20%;
   height: 60vh;
+  z-index: 1;
 }
 
 #about-skills h2 {
-  color: #141414;
+  color: #191e29;
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -208,6 +217,8 @@ a {
 }
 
 #work-wrapper {
+  position: relative;
+  overflow: hidden;
   background: #191e29;
   color: #fafafa;
   padding: 5rem 20%;
@@ -224,9 +235,15 @@ a {
 }
 
 #contact-wrapper {
+  position: relative;
   background: #fafafa;
   color: #141414;
-  padding: 4rem 20%;
+  padding: 5rem 20%;
+  z-index: 3;
+}
+
+#contact-wrapper h3 {
+  color: #229fff;
 }
 
 #contact-header {
@@ -236,7 +253,7 @@ a {
 }
 
 #contact-header h2 {
-  line-height: 4rem;
+  line-height: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -270,6 +287,10 @@ a {
   color: #4eb2ff;
 }
 
+.fa-solid {
+  margin-right: 5px;
+}
+
 .social-media-01 {
   padding: 20px 0px 0px 0px;
 }
@@ -295,7 +316,7 @@ a {
   top: -650px;
   left: -450px;
   height: 110vh;
-  z-index: 1;
+  z-index: 3;
 }
 
 .bg-circle-bottom {
@@ -304,6 +325,41 @@ a {
   right: -350px;
   height: 100vh;
   z-index: 0;
+}
+
+.bg-circle-about {
+  position: absolute;
+  bottom: 1520px;
+  left: -500px;
+  height: 98vh;
+  z-index: 0;
+}
+
+.bg-circle-work {
+  position: absolute;
+  bottom: -600px;
+  right: -600px;
+  height: 98vh;
+  z-index: 0;
+}
+
+.contact-field {
+  text-align: center;
+  margin: 20px 0px;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.contact-field a {
+  font-size: 1.5rem;
+  margin: 0px 0.2rem;
+  padding: 0px 5px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.contact-field a:hover {
+  color: #4eb2ff;
 }
 
 .flex {
@@ -499,19 +555,32 @@ a {
 }
 
 .portfolio-card-1 {
-  width: 400px;
-  height: 400px;
-  background: url(/assets/images/Ardent-Author_Screencap01.PNG);
-  background-size: 192%;
-  background-position: 50% -1px;
-  border-radius: 2px;
+  position: relative;
   -webkit-transition: 350ms ease-in-out;
   transition: 350ms ease-in-out;
+  cursor: pointer;
 }
 
 .portfolio-card-1:hover {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+.portfolio-card-1-img {
+  width: 300px;
+  height: 300px;
+  background: url(/assets/images/Ardent-Author_Screencap01.PNG);
+  background-size: 192%;
+  background-position: 50% -1px;
+}
+
+.portfolio-card-1-desc {
+  position: absolute;
+  color: #191e29;
+  background: #fafafa;
+  width: 100%;
+  height: 50px;
+  padding: 10%;
 }
 
 .portfolio-card-2 {

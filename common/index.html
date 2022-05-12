@@ -59,80 +59,92 @@
         <img src="/assets/images/webp/Mario_Ferrera_Headshot.webp" alt="Mario_Ferrera_Headshot">
       </div>
       <div id="about-info">
-        <h2>About Me</h2>
-        <p>Hi there! My name is Mario, and I am a front-end developer who enjoys building new, creative sites and improving existing systems. In my work I focus on functionality, responsivity, and clean interfaces. I also value knowledge and strongly believe that, through time, we can learn to solve most problems.
+        <h2><span class="t-primary">About</span> Mario</h2>
+        <p>Hi there! I'm a front-end developer who enjoys building new, creative sites and improving existing systems. In my work I focus on functionality, responsivity, and clean interfaces. I also value information and strongly believe that the pursuit of knowledge is one of the greatest aspirations.
         </p>
         <br>
         <p>
-          Aside from my profession, I'm also an avid media composer and writer in my spare time. I love learning new things and pursuing my passions, when time is not so scarce.
+          Aside from my profession, I'm also an avid media composer and writer in my spare time. I love learning new things and pursuing my passions, when time is not so scarce. I enjoy video games and hunting for new music to add to my playlists.
         </p>
       </div>
     </div>
+    <picture>
+      <source type="image/webp" media="(min-width:850px)" srcset="/assets/images/Texture-Spiral.png">
+      <img src="/assets/images/Texture-Spiral.png" alt="about background texture" class="bg-circle-about">
+    </picture>
     <div id="about-skills">
-      <h2>My Technical Skills Include:</h2>
-      <div>
+      <h2><span class="t-primary">Skills</span> & Experience</h2>
+      <div id="about-skills-list">
         <ul class="grid grid-skills">
-          <li>HTML</li>
-          <li>CSS + SASS</li>
-          <li>JavaScript</li>
-          <li>Responsive Design</li>
-          <li>Wordpress</li>
-          <li>Visual Studio Code</li>
-          <li>GitHub + GitBash</li>
-          <li>Adobe Creative Cloud</li>
-          <li>Microsoft Office Collection</li>
-          <li>Google Workspace</li>
-          <li>Reaper</li>
-          <li>Cubase</li>
+          <li><i class="fa-solid fa-caret-right"></i> HTML</li>
+          <li><i class="fa-solid fa-caret-right"></i> CSS + SASS</li>
+          <li><i class="fa-solid fa-caret-right"></i> JavaScript</li>
+          <li><i class="fa-solid fa-caret-right"></i> Responsive Design</li>
+          <li><i class="fa-solid fa-caret-right"></i> Wordpress</li>
+          <li><i class="fa-solid fa-caret-right"></i> Visual Studio Code</li>
+          <li><i class="fa-solid fa-caret-right"></i> GitHub + GitBash</li>
+          <li><i class="fa-solid fa-caret-right"></i> Adobe Creative Cloud</li>
+          <li><i class="fa-solid fa-caret-right"></i> Microsoft Office Collection</li>
+          <li><i class="fa-solid fa-caret-right"></i> Music Production</li>
         </ul>
       </div>
     </div>
-    <!-- Aside Social 2 -->
-    <!-- <div id="aside-social" class="flex flex-col flex-jc-c flex-ai-c">
-      <h3>Follow me on Social Media</h3>
-      <div class="social-media-01 grid grid-box-3">
-        <a href="https://github.com/Aedrus" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-    </div> -->
-  <!-- Work Section -->
+  <!-- Projects Section -->
     <div id="work-wrapper">
       <div id="work-heading">
-        <h2>Portfolio Work</h2>
+        <h2><span class="t-primary">My</span> Projects</h2>
       </div>
       <div id="work-gallery" class="grid grid-gallery">
-        <a href="https://theardentauthor.com/" target="_blank"><article class="portfolio-card-1"></article></a>
+        <article class="portfolio-card-1">
+          <a href="https://theardentauthor.com/" target="_blank">
+          <div class="portfolio-card-1-desc flex flex-jc-c flex-ai-c"><h4>The Ardent Author Blog</h4></div>
+          <div class="portfolio-card-1-img"></div></a>
+        </article>
         <!-- <article class="portfolio-card-2"></article> -->
         <!-- <article class="portfolio-card-3"></article> -->
       </div>
+      <picture>
+        <source type="image/webp" media="(min-width:650px)" srcset="/assets/images/Texture-Spiral.png">
+        <img src="/assets/images/Texture-Spiral.png" alt="about background texture" class="bg-circle-work">
+      </picture>
     </div>
   <!-- Contact Section -->
     <div id="contact-wrapper" class="grid grid-box-2 flex flex-jc-c flex-ai-c">
       <div id="contact-header">
-        <h2>Contact</h2>
+        <h2><span class="t-primary">Contact</span> Me</h2>
         <p>I love working on new projects and learning new things. If you have any questions or want to work with me, feel free to reach out.</p>
       </div>
-      <div class="contact-form">
+      <div class="contact-field">
+        <h3>EMAIL</h3>
+        <p>mario.j.ferrera@theardentauthor.com</p>
+      </div>
+      <div class="contact-field">
+        <h3>PHONE</h3>
+        <p>(727) 481-9296</p>
+      </div>
+      <div class="contact-field">
+        <h3>SOCIAL</h3>
+        <a href="https://github.com/Aedrus" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://theardentauthor.com/" target="_blank"><i class="fa-brands fa-wordpress"></i></a>
+        <a href="https://www.instagram.com/marioferrera32/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <!-- <div class="contact-form">
         <form action="#" method="post">
           <ul class="grid grid-contact">
             <li class="grid-sq1 contact-form-width">
-              <!-- <label for="firstName">First Name<span class="form-req"> *</span></label> -->
+              
               <input type="text" id="firstName" placeholder="First Name" required>
             </li>
             <li class="grid-sq2">
-              <!-- <label for="lastName">Last Name</label> -->
               <input type="text" id="lastName" placeholder="Last Name">
             </li>
             <li class="grid-sq3">
-              <!-- <label for="email">Email<span class="form-req"> *</span></label> -->
               <input type="text" id="email" placeholder="Email">
             </li>
             <li class="grid-sq4">
-              <!-- <label for="subject">Subject<span class="form-req"> *</span></label> -->
               <input type="text" id="subject" placeholder="Subject">
             </li>
             <li class="grid-sq5">
-              <!-- <label for="message">Message<span class="form-req"> *</span></label> -->
               <textarea name="message" id="message" placeholder="Your message here..." rows="3"></textarea>
             </li>
             <li class="grid-sq6 flex flex-jc-c">
@@ -140,10 +152,10 @@
             </li>
           </ul>
         </form>
-        <!-- <img src="/assets/images/Mario Ferrera_Brand Logo_Runic_White.png" alt="placeholder" width="600px"> -->
-      </div>
+      </div> -->
     </div>
   </main>
+
   <!-- Footer -->
   <footer class="grid grid-footer">
     <div id="footer-social">
