@@ -26,8 +26,8 @@
 
   // Grid Styles (Nested)
   &-box-1 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    // gap: 20px;
   }
   &-box-2 {
     grid-template-columns: repeat(auto-fit);
@@ -47,8 +47,8 @@
     gap: 50px;
   }
   &-skills {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 40px;
   }
   &-center {
     justify-items: center;

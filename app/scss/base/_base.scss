@@ -17,13 +17,6 @@ main {
   display: block;
 }
 
-footer {
-  padding: 2rem 2%;
-  background: $bg-primary-accent;
-  color: $type-white;
-  text-align: center;
-}
-
 a {
   text-decoration: none;
   color: $type-black;
@@ -83,6 +76,34 @@ a {
   opacity: 1;
 }
 
+#header-mobile {
+  position: relative;
+  background: $bg-secondary;
+  color: $type-black;
+  padding: 40px 5%;
+  z-index: 2;
+}
+
+#header-mobile span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 32px;
+  height: 6px;
+  background: black;
+  margin: 23px;
+}
+#header-mobile span:nth-child(1) {
+  top: 0px;
+}
+#header-mobile span:nth-child(2) {
+  top: 10px;
+}
+#header-mobile span:nth-child(3) {
+  top: 20px;
+}
+
 
 // Hero Section--------------
 #hero-section-prime {
@@ -96,8 +117,6 @@ a {
   background: $bg-secondary;
   font-weight: 600;
   height: 100vh;
-  padding: 10rem 15rem 18rem 15rem;
-  font-size: 1.5rem;
   
 
   h1 {
@@ -105,7 +124,6 @@ a {
     line-height: 1em;
   }
   h3 {
-    font-size: 1.8rem;
     color: $primary-color-darker;
     padding: 10px 0px 25px 0px;
     line-height: 1em;
@@ -114,7 +132,7 @@ a {
 
 #hero-title {
   z-index: 1;
-  width: 60%;
+  width: 100%;
   text-align: center;
 
   p {
@@ -130,9 +148,11 @@ a {
   padding: 3rem 6rem;
 }
 // About Section --------------
-#about-wrapper {
+#about-prime {
   position: relative;
   overflow: hidden;
+}
+#about-wrapper {
   background: $bg-primary-accent;
   color: $type-white;
   padding: 5rem 20%;
@@ -149,16 +169,12 @@ a {
 #about-image {
   margin: 20px 20px;
   z-index: 1;
-  img {
-    border-radius: 10px;
-    max-width: 100%;
-    // filter: grayscale(0%);
-  }
+  // img {
+  //   border-radius: 10px;
+  //   // height: 450px;
+  // }
 }
 
-#about-info {
-  padding: 0 40px;
-}
 // About Skills Section
 
 #about-skills {
@@ -222,7 +238,17 @@ a {
 }
 
 // Footer Section ------------------
+
+#footer-wrapper {
+  position: relative;
+  padding: 2rem 2%;
+  background: $bg-primary-accent;
+  color: $type-white;
+  text-align: center;
+}
+
 #footer-nav a {
+  width: 100%;
   color: $type-white;
   list-style: none;
   margin: 0px 1rem;
@@ -276,30 +302,30 @@ a {
 
 .bg-circle-top {
   position: absolute;
-  top: -650px;
-  left: -450px;
-  height: 110vh;
+  top: -700px;
+  left: -500px;
+  height: 1100px;
   z-index: 3;
 }
 .bg-circle-bottom {
   position: absolute;
-  top: 500px;
-  right: -350px;
-  height: 100vh;
+  top: 650px;
+  right: -500px;
+  height: 1100px;
   z-index: 0;
 }
 .bg-circle-about {
   position: absolute;
-  bottom: 1520px;
-  left: -500px;
-  height: 98vh;
+  bottom: -700px;
+  left: -650px;
+  height: 1000px;
   z-index: 0;
 }
 .bg-circle-work {
   position: absolute;
-  bottom: -600px;
+  bottom: -700px;
   right: -600px;
-  height: 98vh;
+  height: 1000px;
   z-index: 0;
 }
 

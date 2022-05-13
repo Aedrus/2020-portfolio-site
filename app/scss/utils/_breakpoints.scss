@@ -1,3 +1,220 @@
 // ---------------------------------
 // Breakpoint & Media Query Styles
 // ---------------------------------
+// Breakpoints Variable
+$breakpoints: (
+  "desktop": 1366px,
+  "lrgTablet": 1135px,
+  "smlTablet": 744px,
+  "mobile": 500px,
+);
+// Breakpoint Mixins ----------------------
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, "desktop")) {
+    @content;
+  }
+}
+@mixin lrgTablet {
+  @media (min-width: map-get($breakpoints, "lrgTablet")) and (max-width: map-get($breakpoints, "desktop")) {
+    @content;
+  }
+}
+@mixin smlTablet {
+  @media (min-width: map-get($breakpoints, "smlTablet")) and (max-width: map-get($breakpoints, "lrgTablet")) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: map-get($breakpoints, "smlTablet")) {
+    @content;
+  }
+}
+
+// Header Nav Bar Breakpoints
+.desktop-nav {
+  @include desktop {
+   display: flex;
+  }
+  @include lrgTablet {
+    display: flex;
+  }
+  @include smlTablet {
+    display: flex;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+.mobile-nav {
+  @include desktop {
+   display: none;
+  }
+  @include lrgTablet {
+    display: none;
+  }
+  @include smlTablet {
+    display: none;
+  }
+  @include mobile {
+    display: flex;
+  }
+}
+
+// Hero Section Breakpoints
+.mobile-hero div {
+  @include desktop {
+    padding: 10rem 15rem 18rem 15rem;
+   }
+   @include lrgTablet {
+    padding: 10rem 13rem 18rem 13rem;
+   }
+   @include smlTablet {
+    padding: 10rem 5rem 18rem 5rem;
+   }
+   @include mobile {
+     padding: 0rem;
+   }
+}
+
+// About Section Breakpoints
+.responsive-about, 
+.responsive-about h2,
+.responsive-about p {
+  @include desktop {
+    text-align: left;
+    padding-left: 20px;
+   }
+   @include lrgTablet {
+    text-align: center;
+   }
+   @include smlTablet {
+    text-align: center;
+   }
+   @include mobile {
+     text-align: center;
+   }
+}
+
+// Work Section Breakpoints
+.responsive-work {
+  @include desktop {
+    display: grid;
+   }
+   @include lrgTablet {
+    display:  grid;
+   }
+   @include smlTablet {
+    display: flex;
+    justify-content: center;
+   }
+   @include mobile {
+     display: flex;
+     justify-content: center;
+   }
+}
+
+// Footer breakpoints
+.footer-mobile {
+  @include desktop {
+    display: grid;
+   }
+   @include lrgTablet {
+    display: grid;
+   }
+   @include smlTablet {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+   }
+   @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+}
+
+// Type Breakpoints
+.responsive-heading1 {
+  @include desktop {
+    font-size: 4em;
+  }
+  @include lrgTablet {
+    font-size: 3.5em;
+  }
+  @include smlTablet {
+    font-size: 3.2em;
+  }
+  @include mobile {
+    font-size: 2.9em;
+    padding: 0;
+  }
+}
+.responsive-heading3 {
+  @include desktop {
+    font-size: 1.75em;
+  }
+  @include lrgTablet {
+    font-size: 1.55em;
+  }
+  @include smlTablet {
+    font-size: 1.3em;
+  }
+  @include mobile {
+    font-size: 1em;
+    padding: 0;
+  }
+}
+
+// Image Breakpoints
+
+.responsive-image img {
+  @include desktop {
+    height: 1100px;
+  }
+  @include lrgTablet {
+    height: 1000px;
+  }
+  @include smlTablet {
+    height: 950px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+.mobile-image img {
+  @include desktop {
+    display: none;
+  }
+  @include lrgTablet {
+    display: none;
+  }
+  @include smlTablet {
+    display: none;
+  }
+  @include mobile {
+    left: -400px;
+    height: 900px;
+  }
+}
+
+.responsive-about-img {
+  @include desktop {
+    display: flex;
+    justify-content: end;
+    height: 450px;
+  }
+  @include lrgTablet {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+  }
+  @include smlTablet {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+  }
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+  }
+}
